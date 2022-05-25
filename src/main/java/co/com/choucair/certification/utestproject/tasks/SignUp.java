@@ -16,22 +16,22 @@ public class SignUp implements Task{
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        actor.attemptsTo(Click.on(uTestSignUpPage.SIGNUP_BUTTON),
+        actor.attemptsTo(Click.on(uTestSignUpPage.SIGN_UP_BUTTON),
                 Enter.theValue("Jose").into(uTestSignUpPage.INPUT_FIRST_NAME),
                 Enter.theValue("Rodriguez").into(uTestSignUpPage.INPUT_LAST_NAME),
-                Enter.theValue("ProfesorJose477458857@gmail.com").into(uTestSignUpPage.INPUT_EMAIL),
+                Enter.theValue("ProfesorJose477458857JR1@gmail.com").into(uTestSignUpPage.INPUT_EMAIL),
                 SelectFromOptions.byVisibleText("September").from(uTestSignUpPage.SELECT_MONTH),
                 SelectFromOptions.byVisibleText("7").from(uTestSignUpPage.SELECT_DAY),
                 SelectFromOptions.byVisibleText("1996").from(uTestSignUpPage.SELECT_YEAR),
-                Click.on(uTestSignUpPage.NEXT_BUTTON),
+                Click.on(uTestSignUpPage.NEXT_LOCATION_BUTTON),
                 Enter.theValue("G96F+70H").into(uTestSignUpPage.INPUT_ZIP),
-                Click.on(uTestSignUpPage.NEXT_BUTTON2),
-                Click.on(uTestSignUpPage.NEXT_BUTTON2),
+                Click.on(uTestSignUpPage.NEXT_DEVICES_LAST_STEP_BUTTON_),
+                Click.on(uTestSignUpPage.NEXT_DEVICES_LAST_STEP_BUTTON_),
                 Enter.theValue("Intel972011*").into(uTestSignUpPage.INPUT_PASSWORD),
                 Enter.theValue("Intel972011*").into(uTestSignUpPage.INPUT_PASSWORD_AGAIN),
                 Click.on(uTestSignUpPage.CLICK_ACCEPT_TERMS),
                 Click.on(uTestSignUpPage.CLICK_ACCEPT_PRIVACY),
-                Click.on(uTestSignUpPage.NEXT_BUTTON3)
+                Click.on(uTestSignUpPage.NEXT_COMPLETE_SET_UP_BUTTON_)
         );
 
     }
