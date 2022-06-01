@@ -10,7 +10,8 @@ import net.serenitybdd.screenplay.actions.SelectFromOptions;
 
 public class SignUp implements Task{
 
-    public static SignUp onThePage() { return Tasks.instrumented(SignUp.class);
+    public static SignUp onThePage() {
+        return Tasks.instrumented(SignUp.class);
     }
 
     @Override
@@ -19,7 +20,7 @@ public class SignUp implements Task{
         actor.attemptsTo(Click.on(uTestSignUpPage.SIGN_UP_BUTTON),
                 Enter.theValue("Jose").into(uTestSignUpPage.INPUT_FIRST_NAME),
                 Enter.theValue("Rodriguez").into(uTestSignUpPage.INPUT_LAST_NAME),
-                Enter.theValue("ProfesorJose477458857JR1@gmail.com").into(uTestSignUpPage.INPUT_EMAIL),
+                Enter.theValue("ProfesorJose477458857JR4@gmail.com").into(uTestSignUpPage.INPUT_EMAIL),
                 SelectFromOptions.byVisibleText("September").from(uTestSignUpPage.SELECT_MONTH),
                 SelectFromOptions.byVisibleText("7").from(uTestSignUpPage.SELECT_DAY),
                 SelectFromOptions.byVisibleText("1996").from(uTestSignUpPage.SELECT_YEAR),
